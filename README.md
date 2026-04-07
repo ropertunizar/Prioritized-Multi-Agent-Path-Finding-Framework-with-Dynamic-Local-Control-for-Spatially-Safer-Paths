@@ -6,7 +6,7 @@ This repository contains the implementation of a **Hybrid Prioritized Multi-Agen
 
 ## Overview
 
-The **Multi-Agent Path Finding (MAPF)** problem—computing collision-free trajectories for multiple agents in a shared environment—is fundamental in robotics, warehouse automation, and logistics. While *prioritized solvers* offer strong scalability, they traditionally rely on extensive temporal modeling (space–time graphs) and constant synchronization via wait actions. This often leads to performance bottlenecks in dense or large environments.
+The **Multi-Agent Path Finding (MAPF)** problem—computing collision-free trajectories for multiple agents in a shared environment, is fundamental in robotics, warehouse automation, and logistics. While *prioritized solvers* offer strong scalability, they traditionally rely on extensive temporal modeling (space–time graphs) and constant synchronization via wait actions. This often leads to performance bottlenecks in dense or large environments.
 
 This framework introduces a **hybrid architecture** that minimizes temporal dependencies. By using **dynamic geometric cost inflation**, the system encourages agents to take spatial detours that resolve potential conflicts *before* they occur in time.
 
@@ -73,6 +73,18 @@ Performance in a 32×32 grid with 20% random obstacles, highlighting robustness 
 
 **Simulation video demo (100 agents):**  
 [![Hybrid MAPF Demo](assets/Paris_video.gif)]
+
+### Citation
+
+If you use this work, please cite:
+
+```latex
+\bibitem{salanova2026decoupling}
+F. Salanova, C. Mahulea, and E. Montijano,
+"Decoupling Geometric Planning and Execution in Scalable Multi-Agent Path Finding,"
+arXiv:2603.26684, 2026.
+Available: https://arxiv.org/abs/2603.26684
+```
 
 
 
